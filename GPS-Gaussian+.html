@@ -37,7 +37,7 @@
                   <i class="fa fa-file"></i> Paper</a> </p>
               </div>
               <div class="column">
-                <p class="mb-5">
+                <p class="mb-5"><p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/yaourtb/GPS-Gaussian+" role="button"  target="_blank"></a>
                   <i class="fa fa-github"></i> Code/Data</p>
               </div>
             </div>
@@ -69,7 +69,7 @@
           <div class="col-12 text-center">
             <h3>Method</h3>
               <hr style="margin-top:0px">
-            <img src="assets/GPS-Gaussian+/method_pipeline.pdf" width="100%" alt=""/>
+            <img src="assets/GPS-Gaussian+/method_pipeline.png" width="100%" alt=""/>
             <p>&nbsp;</p>
             <p>
               <b>Overview of GPS-Gaussian+.</b> Given RGB images of a human-centered scene with sparse camera views and a target novel viewpoint, we select the adjacent two views on which to formulate our pixel-wise Gaussian representation. We extract the image features by using epipolar attention and then conduct an iterative depth estimation. For each source view, the RGB image serves as a color map, while the other parameters of 3D Gaussians are predicted in a pixel-wise manner. The Gaussian parameter maps defined on 2D image planes of both views are further unprojected to 3D space via refined depth maps and aggregated for novel view rendering. The fully differentiable framework enables a joint training mechanism with only rendering loss and geometry regularization.
@@ -108,16 +108,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Free View Rendering</h3>
+          <h3>Rendering Comparisons</h3>
             <hr style="margin-top:0px">
-          <h6 style="color:#8899a5"> Data from <a href="https://neural-3d-video.github.io/" target="_blank">DyNeRF</a></h6>
+          <h6 style="color:#8899a5"> Baselines: NeRF-like <a href="https://zju3dv.github.io/enerf/" target="_blank">ENeRF</a>, image-based rendering <a href="https://ibrnet.github.io/" target="_blank">IBRNet</a>, Gaussian-Splatting-based <a href="https://donydchen.github.io/mvsplat/" target="_blank">MVSplat</a>, optimization-based <a href="https://guanjunwu.github.io/4dgs/" target="_blank">4D-GS</a></h6>
             <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-              <source src="assets/GPS-Gaussian+/FreeviewDyNeRF.mp4" type="video/mp4">
+              <source src="assets/GPS-Gaussian+/RenderCompare.mp4" type="video/mp4">
             </video>
-            <h6 style="color:#8899a5"> Data collected by ourselves</h6>
-            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-              <source src="assets/GPS-Gaussian+/FreeviewOurs.mp4" type="video/mp4">
-            </video>
+              <!-- <br><br> -->
         </div>
       </div>
     </div>
@@ -135,6 +132,26 @@
               <source src="assets/GPS-Gaussian+/GeoCompare.mp4" type="video/mp4">
             </video>
               <!-- <br><br> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Free View Rendering</h3>
+            <hr style="margin-top:0px">
+          <h6 style="color:#8899a5"> Data from <a href="https://neural-3d-video.github.io/" target="_blank">DyNeRF</a></h6>
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/GPS-Gaussian+/FreeviewDyNeRF.mp4" type="video/mp4">
+            </video>
+            <h6 style="color:#8899a5"> Data collected by ourselves</h6>
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/GPS-Gaussian+/FreeviewOurs.mp4" type="video/mp4">
+            </video>
         </div>
       </div>
     </div>
