@@ -30,6 +30,17 @@
             <p><sup>1</sup>Tsinghua University<sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</sup>Harbin Institute of Technology
             <br><sup>*</sup>Equal contribution<sup>&nbsp;&nbsp;&dagger;</sup>Work done during an internship at Tsinghua University&nbsp;&nbsp;<sup>&#x2709</sup>Corresponding author
             </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/pdf/2411.11363" role="button"  target="_blank">
+                  <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                <p class="mb-5">
+                  <i class="fa fa-github"></i> Code/Data</p>
+              </div>
+            </div>
             
           </div>
         </div>
@@ -52,6 +63,24 @@
   </section>
   <br>
 
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Method</h3>
+              <hr style="margin-top:0px">
+            <img src="assets/GPS-Gaussian+/method_pipeline.pdf" width="100%" alt=""/>
+            <p>&nbsp;</p>
+            <p>
+              <b>Overview of GPS-Gaussian+.</b> Given RGB images of a human-centered scene with sparse camera views and a target novel viewpoint, we select the adjacent two views on which to formulate our pixel-wise Gaussian representation. We extract the image features by using epipolar attention and then conduct an iterative depth estimation. For each source view, the RGB image serves as a color map, while the other parameters of 3D Gaussians are predicted in a pixel-wise manner. The Gaussian parameter maps defined on 2D image planes of both views are further unprojected to 3D space via refined depth maps and aggregated for novel view rendering. The fully differentiable framework enables a joint training mechanism with only rendering loss and geometry regularization.
+            </p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  
   <section>
     <div class="container">
       <div class="row">
@@ -111,6 +140,24 @@
     </div>
   </section>
   <br>
+
+    <!-- citing -->
+    <div class="container">
+      <div class="row ">
+        <div class="col-12">
+            <h3>Citation</h3>
+            <hr style="margin-top:0px">
+                <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+  <code>@article{zhou2024gpsplus,
+    title={GPS-Gaussian+: Generalizable Pixel-wise 3D Gaussian Splatting for Real-Time Human-Scene Rendering from Sparse Views},
+    author={Zhou, Boyao and Zheng, Shunyuan and Tu, Hanzhang and Shao, Ruizhi and Liu, Boning and Zhang, Shengping and Nie, Liqiang and Liu, Yebin},
+    journal={arXiv preprint arXiv:2411.11363},
+    year={2024}
+  }</code></pre>
+            <hr>
+        </div>
+      </div>
+    </div>
   
   <footer class="text-center" style="margin-bottom:10px">
       Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
